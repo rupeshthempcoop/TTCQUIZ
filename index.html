@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const QUESTION_VISIBLE_TIME = 20;
   const QUESTION_TIME = 60;
 
-  const QUIZ_QUESTIONS = [
+      const QUIZ_QUESTIONS = [
   /* 1 */ {
     question: "When communicating budget changes to your team, the most effective approach is to:",
     options: [
@@ -92,7 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Provide clear rationale, impact, and actionable steps for adjustment",
       "Delay communication to avoid conflict",
       "Forward the finance department's email without context"
-    ]
+    ],
+	correct: "Provide clear rationale, impact, and actionable steps for adjustment"
   },
 
   /* 2 */ {
@@ -102,7 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Total Revenue – Total Expenses",
       "Operating Profit – Taxes",
       "Sales – Operating Expenses"
-    ]
+    ],
+	correct: "Net Sales – Cost of Goods Sold (COGS)"
   },
 
   /* 3 */ {
@@ -112,7 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "Profitability, liquidity, and solvency",
       "Efficiency, turnover, and capital cost",
       "Sales, cost, and taxes"
-    ]
+    ],
+	correct: "Profitability, efficiency, and leverage"
+
   },
 
   /* 4 */ {
@@ -122,7 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Output level changes frequently",
       "There is no variance in cost",
       "Only fixed costs are present"
-    ]
+    ],
+	correct: "Output level changes frequently"
   },
 
   /* 5 */ {
@@ -132,7 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Time taken to convert inventory into cash",
       "Time between purchase of raw materials and payment to suppliers",
       "The total time a firm's cash is tied up in operations"
-    ]
+    ],
+	correct: "The total time a firm's cash is tied up in operations"
   },
 
   /* 6 */ {
@@ -142,7 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Current assets minus current liabilities",
       "Total assets minus total liabilities",
       "Current assets plus current liabilities"
-    ]
+    ],
+	correct: "Current assets minus current liabilities"
   },
 
   /* 7 */ {
@@ -152,7 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Does not distinguish between capital and revenue items clearly",
       "Includes non-cash items",
       "Is based on accrual accounting"
-    ]
+    ],
+	correct: "Does not distinguish between capital and revenue items clearly"
   },
 
   /* 8 */ {
@@ -162,7 +170,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Integrity, competence, and consistency",
       "Aggressive communication",
       "Fear and control"
-    ]
+    ],
+	correct: "Integrity, competence, and consistency"
   },
 
   /* 9 */ {
@@ -172,7 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Report through formal channels and initiate investigation discreetly",
       "Ignore it to avoid conflict",
       "Warn the employee informally and move on"
-    ]
+    ],
+	correct: "Report through formal channels and initiate investigation discreetly"
   },
 
   /* 10 */ {
@@ -182,7 +192,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "A group of consumers with similar needs or characteristics",
       "A type of product",
       "A company department"
-    ]
+    ],
+	correct: "A group of consumers with similar needs or characteristics"
   },
 
   /* 11 */ {
@@ -192,7 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Information overload and unclear prioritization",
       "Lack of formal authority",
       "Too much employee engagement"
-    ]
+    ],
+	correct: "Information overload and unclear prioritization"
   },
 
   /* 12 */ {
@@ -202,7 +214,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Measure business performance and sustainability",
       "Reduce production levels",
       "Replace customer satisfaction"
-    ]
+    ],
+	correct: "Measure business performance and sustainability"
   },
 
   /* 13 */ {
@@ -212,7 +225,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "The percentage of profit earned on total sales",
       "The amount invested by shareholders",
       "The total fixed cost"
-    ]
+    ],
+	correct: "The percentage of profit earned on total sales"
   },
 
   /* 14 */ {
@@ -222,7 +236,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Strong cash flow",
       "Poor demand forecasting or overproduction",
       "Cost leadership advantage"
-    ]
+    ],
+	correct: "Poor demand forecasting or overproduction"
   },
 
   /* 15 */ {
@@ -232,7 +247,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Awareness, Information, Demand, Agreement",
       "Attraction, Influence, Decision, Action",
       "Attention, Impact, Development, Assurance"
-    ]
+    ],
+	correct: "Attention, Interest, Desire, Action"
   },
 
   /* 16 */ {
@@ -242,7 +258,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "It replaces verbal communication completely",
       "It's irrelevant in formal settings",
       "It reduces emotional connection"
-    ]
+    ],
+	correct: "It often conveys attitude and credibility more strongly than words"
   },
 
   /* 17 */ {
@@ -252,7 +269,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "The ability to understand and manage one's own emotions and those of others",
       "Avoiding emotional expression in the workplace",
       "Being agreeable with everyone"
-    ]
+    ],
+	correct: "The ability to understand and manage one's own emotions and those of others"
   },
 
   /* 18 */ {
@@ -262,7 +280,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Surplus or deficit for the period",
       "Change in cash and bank balance",
       "Retained earnings"
-    ]
+    ],
+	correct: "Change in cash and bank balance"
   },
 
   /* 19 */ {
@@ -272,7 +291,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Require close supervision and dislike responsibility",
       "Are creative and capable of self-direction",
       "Seek achievement and recognition"
-    ]
+    ],
+	correct: "Require close supervision and dislike responsibility"
   },
 
   /* 20 */ {
@@ -282,7 +302,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Purchase of fixed assets",
       "Issue of debentures",
       "Increase in debtors"
-    ]
+    ],
+	correct: "Issue of debentures"
   },
   
   /* 1 */ {
@@ -292,7 +313,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Non-financial motivation",
       "Extrinsic motivation",
       "Punishment theory"
-    ]
+    ],
+	correct: "Non-financial motivation"
   },
 
   /* 2 */ {
@@ -302,7 +324,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Conduct a root-cause analysis to identify process or control gaps",
       "Blame the warehouse staff",
       "Increase the sales target to offset the losses"
-    ]
+    ],
+	correct: "Conduct a root-cause analysis to identify process or control gaps"
   },
 
   /* 3 */ {
@@ -312,7 +335,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Question their assumptions regularly",
       "Encourage diverse opinions",
       "Make balanced decisions"
-    ]
+    ],
+	correct: "Seek out information that supports their existing beliefs"
   },
 
   /* 4 */ {
@@ -322,7 +346,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Evidence of overcharging",
       "Resources available for mission enhancement or future sustainability",
       "A budgeting error"
-    ]
+    ],
+	correct: "Resources available for mission enhancement or future sustainability"
   },
 
   /* 5 */ {
@@ -332,7 +357,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Shows the company's financial position on a specific date",
       "Displays the company's income over a period",
       "Summarizes the company's marketing performance"
-    ]
+    ],
+	correct: "Shows the company's financial position on a specific date"
   },
 
   /* 6 */ {
@@ -342,7 +368,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Factory wages",
       "Office rent, salaries, and utilities",
       "Packaging cost"
-    ]
+    ],
+	correct: "Office rent, salaries, and utilities"
   },
 
   /* 7 */ {
@@ -352,7 +379,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Maximize customer satisfaction and sales revenue",
       "Improve advertising efficiency",
       "Monitor competitor activities"
-    ]
+    ],
+	correct: "Maximize customer satisfaction and sales revenue"
   },
 
   /* 8 */ {
@@ -362,7 +390,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Can only be developed through training",
       "Must always be autocratic",
       "Rely solely on experience"
-    ]
+    ],
+	correct: "Are born with specific personal qualities and characteristics"
   },
 
   /* 9 */ {
@@ -372,7 +401,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Replace the entire team",
       "Ignore the issue to maintain morale",
       "Transfer the responsibility to senior management"
-    ]
+    ],
+	correct: "Focus on systemic improvement rather than assigning blame"
   },
 
   /* 10 */ {
@@ -382,7 +412,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Maximize shareholder wealth",
       "Minimize expenses",
       "Increase market share"
-    ]
+    ],
+	correct: "Maximize shareholder wealth"
   },
 
   /* 11 */ {
@@ -392,7 +423,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Low profitability due to idle funds",
       "Shortage of inventory",
       "Improved return on investment"
-    ]
+    ],
+	correct: "Low profitability due to idle funds"
   },
 
   /* 12 */ {
@@ -402,7 +434,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Reducing inventory levels",
       "Buying new machinery",
       "Paying off short-term loans"
-    ]
+    ],
+	correct: "Reducing inventory levels"
   },
 
   /* 13 */ {
@@ -412,7 +445,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Be clear, respectful, and aware of cultural differences in tone and context",
       "Avoid feedback",
       "Use only written instructions"
-    ]
+    ],
+	correct: "Be clear, respectful, and aware of cultural differences in tone and context"
   },
 
   /* 14 */ {
@@ -422,7 +456,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "All expenses including taxes and interest",
       "Cost of goods sold only",
       "Indirect expenses only"
-    ]
+    ],
+	correct: "All expenses including taxes and interest"
   },
 
   /* 15 */ {
@@ -432,7 +467,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Aligning time spent with organizational goals and priorities",
       "Responding instantly to every request",
       "Avoiding delegation"
-    ]
+    ],
+	correct: "Aligning time spent with organizational goals and priorities"
   },
 
   /* 16 */ {
@@ -442,7 +478,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Identify personal, skill-related, or motivational barriers through dialogue",
       "Reassign them immediately",
       "Reduce their responsibilities silently"
-    ]
+    ],
+	correct: "Identify personal, skill-related, or motivational barriers through dialogue"
   },
 
   /* 17 */ {
@@ -452,7 +489,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Maintaining relationships with existing customers",
       "Increasing employee satisfaction",
       "Improving supplier relations"
-    ]
+    ],
+	correct: "Maintaining relationships with existing customers"
   },
 
   /* 18 */ {
@@ -462,7 +500,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Evaluating growth strategies",
       "Assessing financial performance",
       "Determining pricing strategies"
-    ]
+    ],
+	correct: "Evaluating growth strategies"
   },
 
   /* 19 */ {
@@ -472,7 +511,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Decreased team efficiency and higher cost overruns",
       "Greater innovation",
       "Stronger vendor relations"
-    ]
+    ],
+	correct: "Decreased team efficiency and higher cost overruns"
   },
 
   /* 20 */ {
@@ -482,7 +522,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Growth",
       "Decline",
       "Forecast"
-    ]
+    ],
+	correct: "Forecast"
   },
   
   /* 1 */ {
@@ -492,7 +533,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Supreme Court of India",
       "National Green Tribunal",
       "Rajasthan High Court"
-    ]
+    ],
+	correct:  "Supreme Court of India"
   },
 
   /* 2 */ {
@@ -502,7 +544,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Both size and cases are declining",
       "Size is rising, but cases are on the decline",
       "Size is declining, but cases are rising"
-    ]
+    ],
+	correct: "Size is rising, but cases are on the decline"
   },
 
   /* 3 */ {
@@ -512,7 +555,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Australia",
       "UAE",
       "USA"
-    ]
+    ],
+	correct: "Australia"
   },
 
   /* 4 */ {
@@ -522,7 +566,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "An aerial bombardment",
       "A blockade of key ports",
       "A ground invasion"
-    ]
+    ],
+	correct: "A blockade of key ports"
   },
 
   /* 5 */ {
@@ -532,7 +577,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "6.7%",
       "7.2%",
       "8.1%"
-    ]
+    ],
+	correct: "6.7%"
   },
 
   /* 6 */ {
@@ -542,7 +588,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Mukhtar Ansari",
       "Atiq Ahmed",
       "Azam Khan"
-    ]
+    ],
+	correct: "Kuldeep Singh Sengar"
   },
 
   /* 7 */ {
@@ -552,7 +599,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Tamil Nadu",
       "Andhra Pradesh",
       "Karnataka"
-    ]
+    ],
+	correct: "Tamil Nadu"
   },
 
   /* 8 */ {
@@ -562,7 +610,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "High-end procedures",
       "Maternity care",
       "COVID-19 vaccinations"
-    ]
+    ],
+	correct: "High-end procedures"
   },
 
   /* 9 */ {
@@ -572,7 +621,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Anbumani Ramadoss",
       "G.K. Mani",
       "Anbumani’s wife, Sowmiya"
-    ]
+    ],
+	correct: "Anbumani Ramadoss"
   },
 
   /* 10 */ {
@@ -582,7 +632,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "₹2.5 lakh/kg",
       "₹3.0 lakh/kg",
       "₹2.0 lakh/kg"
-    ]
+    ],
+	correct: "₹2.5 lakh/kg"
   },
 
   /* 11 */ {
@@ -592,7 +643,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Madurai",
       "Tuticorin",
       "Coimbatore"
-    ]
+    ],
+	correct: "Tuticorin"
   },
 
   /* 12 */ {
@@ -602,7 +654,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "RIL and BP",
       "ONGC and GAIL",
       "Vedanta and Cairn"
-    ]
+    ],
+	correct: "RIL and BP"
   },
 
   /* 13 */ {
@@ -612,7 +665,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Uttar Pradesh",
       "Karnataka",
       "Kerala"
-    ]
+    ],
+	correct: "Tamil Nadu"
   },
 
   /* 14 */ {
@@ -622,7 +676,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Tripura",
       "Assam",
       "Nagaland"
-    ]
+    ],
+	correct: "Tripura"
   },
 
   /* 15 */ {
@@ -632,7 +687,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Uttar Pradesh",
       "West Bengal",
       "Odisha"
-    ]
+    ],
+	correct: "Bihar"
   },
 
   /* 16 */ {
@@ -642,7 +698,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Muslim Women (Protection of Rights on Marriage) Act",
       "Hindu Marriage Act",
       "Indian Succession Act"
-    ]
+    ],
+	correct: "Muslim Women (Protection of Rights on Marriage) Act"
   },
 
   /* 17 */ {
@@ -652,7 +709,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Nigeria",
       "Gaza",
       "Sudan"
-    ]
+    ],
+	correct: "Nigeria"
   },
 
   /* 18 */ {
@@ -662,7 +720,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Inclusion",
       "Foreign Direct Investment",
       "Tax cuts"
-    ]
+    ],
+	correct: "Inclusion"
   },
 
   /* 19 */ {
@@ -672,7 +731,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Punjab",
       "Himachal Pradesh",
       "Rajasthan"
-    ]
+    ],
+	correct: "Punjab"
   },
 
   /* 20 */ {
@@ -682,7 +742,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "14",
       "20",
       "12"
-    ]
+    ],
+	correct: "14"
   },
   
   /* 1 */ {
@@ -692,7 +753,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Managing production across locations",
       "Developing financial plans",
       "Creating marketing campaigns"
-    ]
+    ],
+	correct: "Assigning salespeople to specific geographic or customer areas"
   },
 
   /* 2 */ {
@@ -702,7 +764,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Aligning time spent with organizational goals and priorities",
       "Responding instantly to every request",
       "Avoiding delegation"
-    ]
+    ],
+	correct: "Aligning time spent with organizational goals and priorities"
   },
 
   /* 3 */ {
@@ -712,7 +775,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Schedule 'focus blocks' for deep work and set communication boundaries",
       "Resign tasks to someone else entirely",
       "Avoid interaction with your team"
-    ]
+    ],
+	correct: "Schedule 'focus blocks' for deep work and set communication boundaries"
   },
 
   /* 4 */ {
@@ -722,7 +786,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "The customer's ability to remember a brand without visual cues",
       "The company's internal quality control",
       "A rebranding campaign"
-    ]
+    ],
+	correct: "The customer's ability to remember a brand without visual cues"
   },
 
   /* 5 */ {
@@ -732,7 +797,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Budgeting, promoting, hiring, and firing",
       "Selling, advertising, and financing",
       "Recruiting, planning, and manufacturing"
-    ]
+    ],
+	correct: "Organizing, staffing, directing, and controlling"
   },
 
   /* 6 */ {
@@ -742,7 +808,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Ensuring vendor reliability, fair pricing, and contract compliance",
       "Eliminating supplier diversity",
       "Avoiding quality inspections"
-    ]
+    ],
+	correct: "Ensuring vendor reliability, fair pricing, and contract compliance"
   },
 
   /* 7 */ {
@@ -752,7 +819,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Less accountability for delays",
       "Reduced need for planning",
       "Longer work hours for everyone"
-    ]
+    ],
+	correct: "More control over tasks and improved team output"
   },
 
   /* 8 */ {
@@ -762,7 +830,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Inefficiencies or waste in operational processes",
       "Inflation in the broader economy",
       "Market competition"
-    ]
+    ],
+	correct: "Inefficiencies or waste in operational processes"
   },
 
   /* 9 */ {
@@ -772,7 +841,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Facilitating open dialogue and focusing on shared objectives",
       "Ignoring the issue to maintain harmony",
       "Escalating immediately to senior management"
-    ]
+    ],
+	correct: "Facilitating open dialogue and focusing on shared objectives"
   },
 
   /* 10 */ {
@@ -782,7 +852,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Market price ÷ EPS",
       "DPS ÷ Market price",
       "Market price ÷ DPS"
-    ]
+    ],
+	correct: "Market price ÷ EPS"
   },
 
   /* 11 */ {
@@ -792,7 +863,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Writing advertising copy",
       "Designing packaging",
       "Conducting market segmentation"
-    ]
+    ],
+	correct: "Selecting the most effective media channels and timing for advertisements"
   },
 
   /* 12 */ {
@@ -802,7 +874,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Distinguish between urgent and important activities",
       "Measure time in financial terms",
       "Track attendance efficiently"
-    ]
+    ],
+	correct: "Distinguish between urgent and important activities"
   },
 
   /* 13 */ {
@@ -812,7 +885,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Question their assumptions regularly",
       "Encourage diverse opinions",
       "Make balanced decisions"
-    ]
+    ],
+	correct: "Seek out information that supports their existing beliefs"
   },
 
   /* 14 */ {
@@ -822,7 +896,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Misleading customers with incorrect or exaggerated claims",
       "Promoting products on digital media",
       "Repeating ads frequently"
-    ]
+    ],
+	correct: "Misleading customers with incorrect or exaggerated claims"
   },
 
   /* 15 */ {
@@ -832,7 +907,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Monitoring cost-performance indicators and improving resource utilization",
       "Delegating all budget oversight to finance teams",
       "Focusing only on revenue growth"
-    ]
+    ],
+	correct: "Monitoring cost-performance indicators and improving resource utilization"
   },
 
   /* 16 */ {
@@ -842,7 +918,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Reinforcement and recognition",
       "Group polarization",
       "Classical conditioning"
-    ]
+    ],
+	correct: "Reinforcement and recognition"
   },
 
   /* 17 */ {
@@ -852,7 +929,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Increasing profitability",
       "Reducing employee productivity",
       "Increasing overheads"
-    ]
+    ],
+	correct: "Increasing profitability"
   },
 
   /* 18 */ {
@@ -862,7 +940,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Ensuring clarity, feedback, and alignment across all levels",
       "Avoiding difficult conversations",
       "Speaking more than listening"
-    ]
+    ],
+	correct: "Ensuring clarity, feedback, and alignment across all levels"
   },
 
   /* 19 */ {
@@ -872,7 +951,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Understanding issues deeply before making decisions",
       "Reducing meeting frequency",
       "Avoiding documentation"
-    ]
+    ],
+	correct: "Understanding issues deeply before making decisions"
   },
 
   /* 20 */ {
@@ -882,7 +962,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Monitoring cost-performance indicators and improving resource utilization",
       "Delegating all budget oversight to finance teams",
       "Focusing only on revenue growth"
-    ]
+    ],
+	correct: "Monitoring cost-performance indicators and improving resource utilization"
   },
   
   /* 1 */ {
@@ -892,7 +973,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Sangeet Som",
       "Suresh Rana",
       "Maya Singh"
-    ]
+    ],
+	correct: "Kuldeep Singh Sengar"
   },
 
   /* 2 */ {
@@ -902,7 +984,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Keelung",
       "Both A and B",
       "Neither"
-    ]
+    ],
+	correct: "Both A and B"
   },
 
   /* 3 */ {
@@ -912,7 +995,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Industrial credit growth",
       "Service sector output",
       "Export volume"
-    ]
+    ],
+	correct: "Industrial credit growth"
   },
 
   /* 4 */ {
@@ -922,7 +1006,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "UK",
       "Russia",
       "Belarus"
-    ]
+    ],
+	correct: "Russia"
   },
 
   /* 5 */ {
@@ -932,7 +1017,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Madurai",
       "Chennai (Anna Nagar)",
       "Trichy"
-    ]
+    ],
+	correct: "Chennai (Anna Nagar)"
   },
 
   /* 6 */ {
@@ -942,7 +1028,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "RBI",
       "Finance Ministry",
       "SBI"
-    ]
+    ],
+	correct: "RBI"
   },
 
   /* 7 */ {
@@ -952,7 +1039,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Kerala",
       "Bihar",
       "Tamil Nadu"
-    ]
+    ],
+	correct: "West Bengal"
   },
 
   /* 8 */ {
@@ -962,7 +1050,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "L. Murugan",
       "Nitin Gadkari",
       "Nirmala Sitharaman"
-    ]
+    ],
+	correct: "L. Murugan"
   },
 
   /* 9 */ {
@@ -972,7 +1061,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Platinum",
       "Silver",
       "Copper"
-    ]
+    ],
+	correct: "Silver"
   },
 
   /* 10 */ {
@@ -982,7 +1072,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Madras High Court",
       "Allahabad High Court",
       "Delhi High Court"
-    ]
+    ],
+	correct: "Kerala High Court"
   },
 
   /* 11 */ {
@@ -992,7 +1083,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "150",
       "200",
       "50"
-    ]
+    ],
+	correct: "150"
   },
 
   /* 12 */ {
@@ -1002,7 +1094,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "BP (British Petroleum)",
       "ExxonMobil",
       "TotalEnergies"
-    ]
+    ],
+	correct: "BP (British Petroleum)"
   },
 
   /* 13 */ {
@@ -1012,7 +1105,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Srirangam Temple",
       "Tirupati Temple",
       "Sabarimala Temple"
-    ]
+    ],
+	correct: "Srirangam Temple"
   },
 
   /* 14 */ {
@@ -1022,7 +1116,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Quiet foundations",
       "Digital India",
       "Space exploration"
-    ]
+    ],
+	correct: "Quiet foundations"
   },
 
   /* 15 */ {
@@ -1032,7 +1127,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Salem",
       "Dharmapuri",
       "Erode"
-    ]
+    ],
+	correct: "Salem"
   },
 
   /* 16 */ {
@@ -1042,7 +1138,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Rally with Jamaat-e-Islami",
       "Resign from posts",
       "Seek asylum in India"
-    ]
+    ],
+	correct: "Rally with Jamaat-e-Islami"
   },
 
   /* 17 */ {
@@ -1052,7 +1149,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Myanmar",
       "Bangladesh",
       "Sri Lanka"
-    ]
+    ],
+	correct: "Myanmar"
   },
 
   /* 18 */ {
@@ -1062,7 +1160,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Myntra",
       "Sephora India",
       "Reliance Trends"
-    ]
+    ],
+	correct: "Sephora India"
   },
 
   /* 19 */ {
@@ -1072,7 +1171,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Madurai Bench",
       "Supreme Court",
       "None of the above (He is a politician)"
-    ]
+    ],
+	correct: "None of the above (He is a politician)"
   },
 
   /* 20 */ {
@@ -1082,7 +1182,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "FY17–FY19",
       "FY20–FY23",
       "FY10–FY12"
-    ]
+    ],
+	correct: "FY17–FY19"
   }
 ];
 
@@ -1166,19 +1267,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
   nextBtn.addEventListener("click", nextQuestion);
 
-  function sendResultsEmail() {
-    let result = "";
-    QUIZ_QUESTIONS.forEach((q, i) => {
-      result += `Q${i+1}: ${q.question}\nAnswer: ${answers[i]}\n\n`;
-    });
+  //function sendResultsEmail() {
+    //let result = "";
+    //QUIZ_QUESTIONS.forEach((q, i) => {
+      //result += `Q${i+1}: ${q.question}\nAnswer: ${answers[i]}\n\n`;
+    //});
 
-    emailjs.send("service_8yr4zf5",   
-    "template_kyqnyrd",  {
+    //emailjs.send("service_8yr4zf5",   
+    //"template_kyqnyrd",  {
+      //student_name: nameInput.value,
+      //student_email: emailInput.value,
+      //answers: result
+    //}).catch(err => console.error("EmailJS error:", err));
+  //}
+  
+  
+  function calculateScore() {
+  let score = 0;
+
+  QUIZ_QUESTIONS.forEach((q, i) => {
+    if (answers[i] === q.correct) {
+      score++;
+    }
+  });
+
+  return score;
+}
+
+
+  function sendResultsEmail() {
+  let result = "";
+
+  QUIZ_QUESTIONS.forEach((q, i) => {
+    result += 
+`Q${i + 1}: ${q.question}
+Selected Answer: ${answers[i]}
+Correct Answer: ${q.correct}
+
+`;
+  });
+
+  const score = calculateScore();
+  const total = QUIZ_QUESTIONS.length;
+
+  emailjs.send(
+    "service_8yr4zf5",
+    "template_kyqnyrd",
+    {
       student_name: nameInput.value,
       student_email: emailInput.value,
+      score: `${score} / ${total}`,
       answers: result
-    }).catch(err => console.error("EmailJS error:", err));
-  }
+    }
+  ).catch(err => console.error("EmailJS error:", err));
+}
+
 
   function finishExam() {
     examFinished = true;
@@ -1206,5 +1349,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-
 
